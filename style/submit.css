@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+}
+
+.container {
+  text-align: center;
+}
+
+.splashLogo {
+  height: 30em;
+  display: block;
+  margin: auto;
+}
+
+.btnBlue {
+  margin: 1em;
+  padding: 0.4em 1em;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 1em;
+  background-color: #043450;
+  color: white;
+  cursor: pointer;
+}
+
+.btnWhite {
+  margin: 1em;
+  padding: 0.3em 0.8em;
+  font-size: 1em;
+  border-radius: 1em;
+  cursor: pointer;
+  background-color: white;
+  border: solid 0.1em #043450;
+  color: #043450;
+}
+
+.btnBlue:hover {
+  background-color: white;
+  border: solid 0.1em #043450;
+  color: #043450;
+}
+
+.btnSplash {
+  padding: 0.6em 1.4em;
+  font-size: 1.5em;
+  border-radius: 1.2em;
+}
+
+.splashTxt {
+  color: #043450;
+  font-size: 2.1em;
+}
+
+nav .logo {
+  color: white;
+  font-size: 2.05em;
+  font-weight: bold;
+  line-height: 4em;
+  padding-left: 3em;
+}
+nav {
+  height: 5em;
+  box-shadow: 0 0.18em 0.9pem rgba(0, 0, 0, 0.4);
+}
+nav ul {
+  float: right;
+  margin-right: 1.9em;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  color: #043450;
+  display: block;
+  padding: 0 0.9em;
+  line-height: 4.35em;
+  font-size: 1.25em;
+  transition: 0.5s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffa201;
+}
+nav ul ul {
+  position: absolute;
+  top: 5.3em;
+  background: white;
+  border-top: 0.18em solid #ffa201;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul {
+  top: 4.35em;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s linear;
+}
+nav ul ul li {
+  width: 9.35em;
+  display: list-item;
+  position: relative;
+}
+nav ul ul li a {
+  line-height: 3.12em;
+}
+
+nav ul ul li a i {
+  margin-left: 2.8em;
+}
+
+.content {
+  margin-top: 2em;
+}
+
+h2 {
+  text-align: center;
+}
+
+.upload {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: #043450;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+h4 {
+  text-align: left;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  padding: 8px;
+}
+
+input[type="button"] {
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  top: 93%;
+  width: 100%;
+  background: #043450;
+  text-align: center;
+  padding: 1em;
+  color: white;
+}

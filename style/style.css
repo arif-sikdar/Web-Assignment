@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+}
+
+.container {
+  text-align: center;
+}
+
+.splashLogo {
+  height: 30em;
+  display: block;
+  margin: auto;
+}
+
+.btnBlue {
+  margin: 1em;
+  padding: 0.4em 1em;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 1em;
+  background-color: #043450;
+  color: white;
+  cursor: pointer;
+}
+
+.btnWhite {
+  margin: 1em;
+  padding: 0.3em 0.8em;
+  font-size: 1em;
+  border-radius: 1em;
+  cursor: pointer;
+  background-color: white;
+  border: solid 0.1em #043450;
+  color: #043450;
+}
+
+.btnBlue:hover {
+  background-color: white;
+  border: solid 0.1em #043450;
+  color: #043450;
+}
+
+.btnSplash {
+  padding: 0.6em 1.4em;
+  font-size: 1.5em;
+  border-radius: 1.2em;
+}
+
+.splashTxt {
+  color: #043450;
+  font-size: 2.1em;
+}
+
+nav .logo {
+  color: white;
+  font-size: 2.05em;
+  font-weight: bold;
+  line-height: 4em;
+  padding-left: 3em;
+}
+nav {
+  height: 5em;
+  box-shadow: 0 0.18em 0.9pem rgba(0, 0, 0, 0.4);
+}
+nav ul {
+  float: right;
+  margin-right: 1.9em;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  color: #043450;
+  display: block;
+  padding: 0 0.9em;
+  line-height: 4.35em;
+  font-size: 1.25em;
+  transition: 0.5s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffa201;
+}
+nav ul ul {
+  position: absolute;
+  top: 5.3em;
+  background: white;
+  border-top: 0.18em solid #ffa201;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul {
+  top: 4.35em;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s linear;
+}
+nav ul ul li {
+  width: 9.35em;
+  display: list-item;
+  position: relative;
+}
+nav ul ul li a {
+  line-height: 3.12em;
+}
+
+nav ul ul li a i {
+  margin-left: 2.8em;
+}
+.hero {
+  text-align: center;
+  background: url(../img/assignment_img.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  color: #043450;
+}
+
+.hero h1 {
+  padding-top: 2em;
+  font-size: 5em;
+}
+
+.hero p {
+  font-size: 2em;
+}
+
+.sidebarbox {
+  width: 100%;
+  display: flex;
+}
+
+.sidebar {
+  height: 500px;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
+  background-color: #ffa201;
+  color: black;
+}
+
+.sidebar a {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.sidebar a:hover {
+  color: white;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content {
+  margin: 2em 5em;
+}
+
+.content h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.cards {
+  display: flex;
+  gap: 8em;
+  justify-content: center;
+}
+
+.card-box {
+  text-align: center;
+  width: 15em;
+  border: solid 0.2em #043450;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.card-box button {
+  border: none;
+  background-color: #043450;
+  width: 15em;
+  color: white;
+  font-size: 1em;
+  padding: 0.4em;
+  cursor: pointer;
+}
+
+.card-box h2 {
+  font-size: 2.25em;
+  margin-top: 0.2em;
+  padding: 0em 0.5em;
+  margin-bottom: 1em;
+}
+
+.card-box p {
+  font-size: 1.4em;
+  padding: 0em 0.5em;
+  margin-bottom: 3em;
+}
+
+.abtcontent {
+  width: 80%;
+  padding: 1em;
+  margin: auto;
+}
+
+.abtcontent h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.abtcontent p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+footer {
+  background: #043450;
+  text-align: center;
+  padding: 2em;
+  color: white;
+}
+
+.abtfooter {
+  position: absolute;
+  top: 93%;
+  width: 100%;
+  background: #043450;
+  text-align: center;
+  padding: 1em 0em;
+  color: white;
+}
+
+.sidecontent {
+  text-align: center;
+  width: 100%;
+  height: 77vh;
+}
+
+.sidecontent ul {
+  padding: 0 10px;
+  text-align: justify;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reg-login.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Registration | Assignment</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html " class="logo"
+        ><img src="img/logo.png" alt="Logo" style="height: 2em"
+      /></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="#"
+            >Submit
+            <i class="fas fa-caret-down"></i>
+          </a>
+          <ul>
+            <li><a href="submitAssignment.html">Assignment</a></li>
+            <li><a href="#">HomeWork</a></li>
+            <li><a href="#">Project</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="sidebarbox">
+      <div class="sidebar">
+        <h2>Other Activities</h2>
+        <ul>
+          <li><a href="wa.html">What is Assignment?</a></li>
+          <li>
+            <a href="ba.html">Benefits of Assignment</a>
+          </li>
+          <li>
+            <a href="whya.html">Why Assignment? </a>
+          </li>
+        </ul>
+      </div>
+      <section class="box">
+        <h1>Registration</h1>
+        <div class="conatainer">
+          <form
+            id="regForm"
+            class="form"
+            onsubmit="return regValidate();"
+            action="login.html"
+          >
+            <div class="gap">
+              <label for="name">Name</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+              />
+            </div>
+            <div class="gap">
+              <label for="username">Username</label><br />
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+              />
+            </div>
+            <div class="gap">
+              <label for="email">Email</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="gap">
+              <label for="password">Password</label><br />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter your password"
+              />
+            </div>
+            <div class="gap">
+              <label for="con-password">Confirm Password</label><br />
+              <input
+                type="password"
+                name="conpassword"
+                id="conpassword"
+                placeholder="Enter your password again"
+              />
+            </div>
+            <button class="btnWhite" type="submit">REGISTER</button>
+          </form>
+        </div>
+        <p>
+          Already have an account?
+          <span class="link-txt"> <a href="login.html">Login Here</a></span>
+        </p>
+      </section>
+    </div>
+    <footer>
+      <p>Copyright &copy; 2023 Mohammed Arif Mazeed Sikdar</p>
+    </footer>
+    <script type="text/javascript" src="script/script.js"></script>
+  </body>
+</html>

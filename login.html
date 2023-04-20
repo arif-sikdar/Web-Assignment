@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reg-login.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Login | Assignment</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html " class="logo"
+        ><img src="img/logo.png" alt="Logo" style="height: 2em"
+      /></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="#"
+            >Submit
+            <i class="fas fa-caret-down"></i>
+          </a>
+          <ul>
+            <li><a href="submitAssignment.html">Assignment</a></li>
+            <li><a href="#">HomeWork</a></li>
+            <li><a href="#">Project</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="sidebarbox">
+      <div class="sidebar">
+        <h2>Other Activities</h2>
+        <ul>
+          <li><a href="wa.html">What is Assignment?</a></li>
+          <li>
+            <a href="ba.html">Benefits of Assignment</a>
+          </li>
+          <li>
+            <a href="whya.html">Why Assignment? </a>
+          </li>
+        </ul>
+      </div>
+      <section class="box">
+        <h1>Login</h1>
+        <div class="conatainer">
+          <form
+            id="loginForm"
+            class="form"
+            onsubmit="return logValidate();"
+            action="index.html"
+          >
+            <div class="gap">
+              <label for="username">Username</label><br />
+              <input
+                type="text"
+                id="logUsername"
+                name="username"
+                placeholder="Enter your username"
+              />
+            </div>
+            <div class="gap">
+              <label for="password">Password</label><br />
+              <input
+                type="password"
+                name="password"
+                id="logPassword"
+                placeholder="Enter your password"
+              />
+            </div>
+            <button class="btnWhite" type="submit">LOGIN</button>
+          </form>
+        </div>
+        <p>
+          Don't have an account?
+          <span class="link-txt"> <a href="reg.html">Register Here</a></span>
+        </p>
+      </section>
+    </div>
+    <footer>
+      <p>Copyright &copy; 2023 Mohammed Arif Mazeed Sikdar</p>
+    </footer>
+    <script type="text/javascript" src="script/script.js"></script>
+  </body>
+</html>
